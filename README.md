@@ -4,6 +4,7 @@
 This is a perceptual grouping framework that organizes image edges into meaningful structures.
 
 If you use the toolbox, we appreciate it if you cite our paper:
+
 @inproceedings{DBLP:conf/cvpr/QiSXZHLG15,
   author    = {Yonggang Qi and
                Yi{-}Zhe Song and
