@@ -35,7 +35,7 @@ If you use the toolbox, we appreciate it if you cite our paper:
         
    - Third party toolbox 
         - EdgeDetector\                             : StructuredEdge detector for edge detection. (You need to re-compile the .cpp files by following the readme file in this folder)
-        - Edge Linking and Line Segment Fitting\*.m : Edge cutting toolbox for obtaining segments on edge map.
+        - Edge Linking and Line Segment Fitting\    : Edge cutting toolbox for obtaining segments on edge map.
         - piotr_toolbox_V3.02\                      : Piotr's Matlab toolbox.
         - gco-v3.0\                                 : software for energy minimization with graph cuts
         
