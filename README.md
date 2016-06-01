@@ -1,59 +1,58 @@
 # PG-framework
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|                                                                       |
-|    Making Better Use of Edges via Perceptual Grouping Toolbox V1.0    |
-|    Yonggang Qi (Email: qiyg at bupt dot edu dot cn)                   |
-|                                                                       |
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-0. Introduction
+## Introduction
 This is a perceptual grouping framework that organizes image edges into meaningful structures.
 
 If you use the toolbox, we appreciate it if you cite our paper:
-@inproceedings{QiCVPR2015,
-  author    = {Yonggang Qi, Yi-Zhe Song, Tao Xiang, Honggang Zhang, Timothy Hospedales, Yi Li and Jun Guo},
-  title     = {Making Better Use of Edges via Perceptual Grouping},
-  booktitle = {CVPR},
-  year      = {2015},
-}
----------------------------------------------------------------------------
+@inproceedings{DBLP:conf/cvpr/QiSXZHLG15,
+  author    = {Yonggang Qi and
+               Yi{-}Zhe Song and
+               Tao Xiang and
+               Honggang Zhang and
+               Timothy M. Hospedales and
+               Yi Li and
+               Jun Guo},
+  title     = {Making better use of edges via perceptual grouping},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}
+               2015, Boston, MA, USA, June 7-12, 2015},
+  pages     = {1856--1865},
+  year      = {2015}}
 
-1. System Requirements
+## System Requirements
 
 - Tested on Matlab R2013b for 64-bit, Ubuntu OS. 
 - Note there is an error related to gco toolbox on Matlab R2014 or above, so run this code on Matlab R2013 please.
 
 ---------------------------------------------------------------------------
 
-2. Installation
+## Installation
 
 - This package should contain the following files:
-    ## Main code ##
-        PGDemo.m                                  : The Demo for perceptual edge grouping.
-        matlab\*.m                                : The Matlab files of implementation of the corresponding paper mentioned in Introduction.
+   - Main code 
+        - PGDemo.m                                  : The Demo for perceptual edge grouping.
+        - matlab\*.m                                : The Matlab files of implementation of the corresponding paper mentioned in Introduction.
         
-    ## Third party toolbox ##
-        EdgeDetector\                             : StructuredEdge detector for edge detection. (You need to re-compile the .cpp files by following the readme file in this folder)
-        Edge Linking and Line Segment Fitting\*.m : Edge cutting toolbox for obtaining segments on edge map.
-        piotr_toolbox_V3.02\                      : Piotr's Matlab toolbox.
-        gco-v3.0\                                 : software for energy minimization with graph cuts
+   - Third party toolbox 
+        - EdgeDetector\                             : StructuredEdge detector for edge detection. (You need to re-compile the .cpp files by following the readme file in this folder)
+        - Edge Linking and Line Segment Fitting\*.m : Edge cutting toolbox for obtaining segments on edge map.
+        - piotr_toolbox_V3.02\                      : Piotr's Matlab toolbox.
+        - gco-v3.0\                                 : software for energy minimization with graph cuts
         
-    ## Data ##
-        ./images/*.jpg                            : Exemple input pictures.
+   - Data 
+        - images/*.jpg                            : Exemple input pictures.
 
 - Start Matlab and add all the above files to Path.
 
 ---------------------------------------------------------------------------
 
-3. Getting started
+## Getting started
 
 - Make sure to carefully follow the installation instructions above.
 - Please see "PGDemo.m" to run demo and get basic usage information.
 
 ---------------------------------------------------------------------------
 
-4. History
+## History
 
 Version 1.0 (30/05/2016)
 - initial version 
