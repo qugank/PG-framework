@@ -22,7 +22,7 @@ If you use the toolbox, we appreciate it if you cite our paper:
 ## System Requirements
 
 - Tested on Matlab R2013b for 64-bit, Ubuntu OS. 
-- Note there is an error related to gco toolbox on Matlab R2014 or above, so run this code on Matlab R2013 please.
+- Note that there is a link error to gco toolbox on Matlab R2014 or above, so please run this code on Matlab R2013.
 
 ---------------------------------------------------------------------------
 
