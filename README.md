@@ -30,11 +30,11 @@ If you use the toolbox, we appreciate it if you cite our paper:
 
 - This package should contain the following files:
    - Main code 
-        - PGDemo.m                                  : The Demo for perceptual edge grouping.
+        - PGDemo.m                                  : The Demo usage of perceptual edge grouping.
         - matlab\*.m                                : The Matlab files of implementation of the corresponding paper mentioned in Introduction.
         
    - Third party toolbox 
-        - EdgeDetector\                             : StructuredEdge detector for edge detection. (You need to re-compile the .cpp files by following the readme file in this folder)
+        - EdgeDetector\                             : StructuredEdge detector for edge detection. 
         - Edge Linking and Line Segment Fitting\    : Edge cutting toolbox for obtaining segments on edge map.
         - piotr_toolbox_V3.02\                      : Piotr's Matlab toolbox.
         - gco-v3.0\                                 : software for energy minimization with graph cuts
