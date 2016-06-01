@@ -1,0 +1,53 @@
+function h = showGrouping(ConSegList, label, path )
+%SHOWGROUPING Visualize the edge grouping results
+%   ConSegList  - The edge segments
+%   label       - The output optimal label given previousl
+
+
+addpath(pwd);
+% addpath('./Edge Linking and Line Segment Fitting/');
+% addpath('./gco-v3.0/matlab/');
+
+load colors.mat;
+
+% path = '../Countour grouping based Object recognition/testing_png/251.airplanes-101/251_0004.jpg';
+        
+        im = imread(path);
+        img = ones(size(im));
+        img = logical(img);
+        h=figure('visible','on','Position',[10,10,size(img,1),size(img,2)]);imshow(img);
+% 
+%         if size(im,3)==1
+%                 im = imgScale(im);
+%                 im = im==255;
+%         end
+
+% 
+%         ConSegList  = GetConSeg( im );
+%         im = ~im;
+%         h=figure('visible','on','Position',[10,10,256,256]);
+%         imshow(im);
+        num_segs = size(ConSegList,2);
+%         axis on;
+        hold on;
+        
+        for k=1:num_segs
+            a = plot(ConSegList{1,k}(:,2),ConSegList{1,k}(:,1), 'LineWidth',1,'Color',colors(mod(label(k),15)+1,:));
+%             scatter(ConSegList{1,k}(:,2),ConSegList{1,k}(:,1), 5, colors(mod(label(k),15)+1,:));
+%             ind = floor(size(ConSegList{1,k},1)/2);
+            % debug mode
+%             text(ConSegList{1,k}(ind,2),ConSegList{1,k}(ind,1),num2str(k),'FontSize',96);
+            
+        end
+%         s = [ConSegList{1,155};ConSegList{1,156};ConSegList{1,166}];
+%         x = s(:,2); y = s(:,1);
+%         [k,v] = convhull(x,y);
+%         plot(x(k),y(k),'-k');
+        set(gca,'ydir','reverse');            
+%         axis off;
+        hold off;
+
+
+
+end
+
