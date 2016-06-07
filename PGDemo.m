@@ -19,7 +19,7 @@ E=edgesNmsMex(E,O,2,0,1,4);
 I = E>0.1;
 edges_fname = './edge.png';
 imwrite(I, edges_fname, 'png');
-SegList  = GetConSeg( I,0 );
+SegList  = GetConSeg( I );
 
 %% perceptual edge grouping
 
